@@ -1,0 +1,13 @@
+<h1>Index page</h1>
+<p><%= flash[:fail] %></p>
+<form action="/new" method="post">
+	<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+	<label>Your Name:</label>
+	<input type="string" name="name">
+	<p><%= flash[:name] %></p>
+	<label>Your starting budget ($)</label>
+	<input type="float" name="budget">
+	<p><%= flash[:budget] %></p>
+	<input type="submit" value="submit">
+
+</form>
