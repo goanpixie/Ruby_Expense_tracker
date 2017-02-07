@@ -2,6 +2,10 @@ class UsersController < ApplicationController
 	def index
 	end
 
+	def show
+		Expense.all
+	end
+
 	def success
   	@user =User.last
 	end
